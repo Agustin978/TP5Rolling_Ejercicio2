@@ -11,8 +11,53 @@
     <title>Personas y Generaciones</title>
 </head>
 <body class="cabecero">
+    <section class="container-fluid">
+        <p class="fs-1 text-center">Ingresa los datos de una persona.</p>
+        <form id="formulario">
+            <div class="mb-3">
+              <label for="ingresaNombre" class="form-label">Ingresar el nombre completo:</label>
+              <input type="text" class="form-control" id="ingresaNombre" placeholder="Ej: Esteban Quito" minlength="5" maxlength="100" required>
+            </div>
+            <div class="mb-3">
+                <label for="ingresaEdad" class="form-label">Ingresar la edad:</label>
+                <input type="number" class="form-control" id="ingresaEdad" placeholder="Ej: 22" required>
+            </div>
+            <div class="mb-3">
+                <label for="ingresaNombre" class="form-label">Ingresar sexo:</label>
+                <select name="sexo" id="ingresaSexo">
+                    <option value="masculino" selected>Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="ingresaPeso" class="form-label">Ingresar el peso en kg:</label>
+                <input type="number" class="form-control" id="ingresaPeso" placeholder="Ej: 72" required>
+            </div>
+            <div class="mb-3">
+                <label for="ingresaAltura" class="form-label">Ingresar la altura en centimetros:</label>
+                <input type="number" class="form-control" id="ingresaAltura" placeholder="Ej: 176" required>
+            </div>
+            <button type="submit" class="btn btn-success" id="btnPersona">Enviar</button>
+        </form>
+    </section>
+    <section class="container my-3">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                  <th scope="col" class="fs-5 fw-bold">Nombre:</th>
+                  <th scope="col" class="fs-5 fw-bold">Edad:</th>
+                  <th scope="col" class="fs-5 fw-bold">Año Nacimiento:</th>
+                  <th scope="col" class="fs-5 fw-bold">Sexo:</th>
+                  <th scope="col" class="fs-5 fw-bold">DNI:</th>
+                  <th scope="col" class="fs-5 fw-bold">Taxonomia:</th>
+                </tr>
+              </thead>
+              <tbody id="tablaPersonas"></tbody>
+        </table>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
     </script>
+    <script src="js/app.js"></script>
 </body>
 </html>

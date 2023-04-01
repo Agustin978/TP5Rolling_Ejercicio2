@@ -11,3 +11,16 @@
     background: url(../img/fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
     background: url(../img/fondo.png), linear-gradient(to left, #7b4397, #dc2430)
 }
+
+.contenedorEdadMas
+{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorEdadMas p
+{
+    margin-left: 3px;
+}
